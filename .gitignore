@@ -6,6 +6,8 @@ __pycache__/
 venv/
 env/
 .vscode/
+export.ps1
+project_context.txt
 
 data/0_raw_downloads/*
 data/2_named_schematics/*
@@ -13,9 +15,6 @@ data/3_litematics_to_convert/*
 data/4_processed_tensors/*
 !data/.gitkeep
 litematic_converter/converter_session.json
-
-models/*
-!models/.gitkeep
 
 *.schem
 *.schematic
