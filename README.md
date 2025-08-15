@@ -59,10 +59,10 @@ When you finish training, it should look like this:
 
 ```bash
 +-- data
-|   +-- 0_raw_downloads
-|   +-- 2_named_schematics
-|   +-- 3_litematics_to_convert
-|   +-- 4_processed_tensors
+|   +-- 0_raw_downloads/
+|   +-- 2_named_schematics/
+|   +-- 3_litematics_to_convert/
+|   +-- 4_processed_tensors/
 |   +-- 1_id_to_name.txt
 |   L-- 5_labels.json
 +-- litematic_converter
@@ -116,7 +116,8 @@ python 01_rename_files.py
 python 01a_triage_litematics.py
 
 # 3. Convert .litematic files to .schem (this will take a while)
-# This requires the Tampermonkey script (litematic_converter\Python Converter Bridge-1.0.user.js) to be installed and active in your browser.
+# This requires the Tampermonkey script (litematic_converter\Python Converter Bridge-1.0.user.js)
+# to be installed and active in your browser.
 cd litematic_converter
 python converter.py
 cd ..
